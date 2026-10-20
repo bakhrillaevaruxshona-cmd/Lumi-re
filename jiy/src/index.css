@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  color-scheme: light;
+  --page-bg: #f5efe9;
+  --panel: #fffaf6;
+  --panel-strong: #fff;
+  --wine: #58111a;
+  --wine-dark: #3d0d15;
+  --gold: #d4af37;
+  --gold-soft: #f6d98b;
+  --muted: #6b7280;
+  --shadow-soft: 0 10px 30px rgba(88, 17, 26, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-scroll-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.home-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(212, 175, 55, 0.12),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(88, 17, 26, 0.08),
+      transparent 25%
+    ),
+    var(--page-bg);
+  color: #1f2937;
+  font-family: Inter, "Segoe UI", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.25);
+}

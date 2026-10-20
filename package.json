@@ -1,0 +1,13 @@
+{
+  "name": "onlyshop",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix jiy",
+    "build": "npm run build --prefix jiy"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "daisyui": "^5.7.50",
+    "tailwindcss": "^4.3.3"
+  }
+}
